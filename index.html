@@ -207,23 +207,25 @@
     </script>
     <script>
       // 이미지와 텍스트를 변경하는 함수
-      function changeContent(title, imageSrc, team, text) {
+      function changeContent(title, imageSrc, team, text, lenguege) {
           document.getElementById('portfolio-image').src = imageSrc;
           document.getElementById('portfolio-title').innerText = title;
           document.getElementById('portfolio-team').innerText = team;
           document.getElementById('portfolio-text').innerText = text;
+          document.getElementById('portfolio-lenguege').innerText = lenguege;
+
       }
   
       // 각 스팬에 클릭 이벤트 추가
       document.getElementById('carekidz').addEventListener('click', function () {
-          changeContent('케어키즈', './images/careKidz.png', '프론트엔드', '두번째 프로젝트입니다.');
+          changeContent('케어키즈', './images/careKidz.png', 'FrontEnd', '두번째 프로젝트입니다.',);
       });
   
       document.getElementById('hansolbom').addEventListener('click', function () {
-          changeContent('한솔봄', './images/HANSOL.png', '기획부터 설계 및 디자인부터 코딩 까지 혼자서 완성했던 홈페이지 입니다.');
+          changeContent('한솔봄', './images/HANSOL.png','UI/UX및 디자인 , 웹퍼블리싱', '기획부터 설계 및 디자인부터 코딩 까지 혼자서 완성했던 홈페이지 입니다.','??');
       });
       document.getElementById('dongseungro').addEventListener('click', function () {
-          changeContent('동성로', './images/dongseungro.png', '첫번째 프로젝트입니다');
+          changeContent('동성로', './images/dongseungro.png','웹 퍼블리싱 , FrontEnd', '첫번째 프로젝트입니다');
       });
       document.getElementById('marvel').addEventListener('click', function () {
           changeContent('MARVEL', './images/MARVEL.png', ' API와 React_vite 를 이용하여 만들었고, 만들고 난 후 굉장히뿌듯했던 홈페이지 입니다.');
@@ -232,7 +234,7 @@
           changeContent('Tmdb', './images/tmdb.png', ' API를 처음으로 적극활용하여 완성시킨 홈페이지 이고, React를사용하여 비동기식으로 작업한 홈페이지 입니다.');
       });
       document.getElementById('inthesityhotel').addEventListener('click', function () {
-          changeContent('IntheSityhotel', './images/HOTEL.png', ' 막막했던 모바일버전의 벽을 열어주고, 더 힘차게 나아갈수있게된홈페이지 입니다.');
+          changeContent('IntheSityhotel', './images/HOTEL.png','UI/UX및 디자인, 웹퍼블리싱', ' 막막했던 모바일버전의 벽을 열어주고, 더 힘차게 나아갈수있게된홈페이지 입니다.');
       });
   
       // 이미지를 클릭했을 때 링크로 이동하는 함수 추가
