@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/portfolio.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
       html{
@@ -61,7 +62,7 @@
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Portfolio</a></li>
-								<li><a href="#about">License</a></li>
+								<li><a href="#about">Skill</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -113,9 +114,19 @@
                   <span id="tmdb" class="portfolio-item" onclick="moveLine(this)">TMDB</span>
                   <span id="inthesityhotel" class="portfolio-item" onclick="moveLine(this)">INTHESITYHOTEL</span>
               </div>
-              <span id="image_span" class="image main"><img id="portfolio-image" src="./images/Header_bg2.jpg" alt="" style="object-fit: cover; height: 350px; object-position: center;" /></span>
-              <div class="image-text">사이트 보러가기</div>
+              <div class="portfolio-image-container">
+              <span id="image_span" class="image main">
+                <img id="portfolio-image" src="./images/Header_bg2.jpg" alt="" style="object-fit: cover; height: 350px; object-position: center;" />
+              </span>
+              <div class="portfolio-overlay">
+                <p class="portfolio-overlay-text">바로가기</p>
+              </div>
+              </div>
+             <b style="font-size: 25px;"> <div id="portfolio-title"></div></b>
+             <br/>
+              <p id="portfolio-team">역활</p>
               <p id="portfolio-text">안녕하세요 포토폴리오 공간입니다.</p>
+       
           </article>
 
 						<!-- About -->
@@ -127,17 +138,18 @@
             </p>              
               <h3>Skill</h3>
               <ul>
-                  <li><i class="fas fa-code"></i> HTML, CSS, JavaScript...</li>
-                  <li><i class="fas fa-paint-brush"></i> Photoshop, Illustrator</li>
+                  <li><i class="fas fa-code"></i> HTML, CSS, JavaScript, jQuery</li>
+                  <li><i class="fas fa-paint-brush"></i> Photoshop, Illustrator,</li>
                   <li><i class="fas fa-pencil-ruler"></i> Xd, Figma</li>
-                  <li><i class="fab fa-react"></i> React</li>
+                  <li>Frontend - React,Node.js,Ajax,Json</li>
+                  <li>Backend -</i> PHP, Mysql, MongoDB</li>
               </ul>
           </article>
 
 						<!-- Contact -->
 							<article id="contact" style="overflow-y: auto; max-height: 800px;">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form class="gform" method="post" data-email="a33990748@gmail.com" action="https://script.google.com/macros/s/AKfycbyjs0HJnWkZwMPNEC7WyEGbh3CSJ_uMo8VzA2mrUV4PnE4Gg8LwfdDqjYkI-tiYxykGWw/exec">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -165,247 +177,7 @@
 								</ul>
 							</article>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
+			
 
 					</div>
 
@@ -421,22 +193,37 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     
 		<!-- Scripts -->
     <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // 페이지가 로드될 때 실행되는 코드
+    // 이벤트 리스너를 사용하여 첫 번째 스팬을 클릭한 것처럼 동작하도록 함
+    document.getElementById('carekidz').click(); // 케어키즈 스팬을 클릭한 것과 같은 효과
+    document.querySelectorAll('#portfolio-menu span').forEach(menu => {
+    menu.addEventListener('click', function() {
+        moveLine(this); // 클릭한 스팬에 따라 흰색 줄 이동
+        horizontalIndicator(this); // 선택된 스팬으로 가로선 이동
+    });
+});
+});
+    </script>
+    <script>
       // 이미지와 텍스트를 변경하는 함수
-      function changeContent(title, imageSrc, text) {
+      function changeContent(title, imageSrc, team, text) {
           document.getElementById('portfolio-image').src = imageSrc;
+          document.getElementById('portfolio-title').innerText = title;
+          document.getElementById('portfolio-team').innerText = team;
           document.getElementById('portfolio-text').innerText = text;
       }
   
       // 각 스팬에 클릭 이벤트 추가
       document.getElementById('carekidz').addEventListener('click', function () {
-          changeContent('케어키즈', './images/careKidz.png', '첫번째 프로젝트입니다.');
+          changeContent('케어키즈', './images/careKidz.png', '프론트엔드', '두번째 프로젝트입니다.');
       });
   
       document.getElementById('hansolbom').addEventListener('click', function () {
           changeContent('한솔봄', './images/HANSOL.png', '기획부터 설계 및 디자인부터 코딩 까지 혼자서 완성했던 홈페이지 입니다.');
       });
       document.getElementById('dongseungro').addEventListener('click', function () {
-          changeContent('동성로', './images/dongseungro.png', '두번째 프로젝트입니다');
+          changeContent('동성로', './images/dongseungro.png', '첫번째 프로젝트입니다');
       });
       document.getElementById('marvel').addEventListener('click', function () {
           changeContent('MARVEL', './images/MARVEL.png', ' API와 React_vite 를 이용하여 만들었고, 만들고 난 후 굉장히뿌듯했던 홈페이지 입니다.');
@@ -445,31 +232,80 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
           changeContent('Tmdb', './images/tmdb.png', ' API를 처음으로 적극활용하여 완성시킨 홈페이지 이고, React를사용하여 비동기식으로 작업한 홈페이지 입니다.');
       });
       document.getElementById('inthesityhotel').addEventListener('click', function () {
-          changeContent('IntheSityhotel', './images/HOTEL.png', '   막막했던 모바일버전의 벽을 열어주고, 더 힘차게 나아갈수있게된홈페이지 입니다.');
+          changeContent('IntheSityhotel', './images/HOTEL.png', ' 막막했던 모바일버전의 벽을 열어주고, 더 힘차게 나아갈수있게된홈페이지 입니다.');
       });
-  // 각 포트폴리오 항목에 클릭 이벤트 추가
-document.querySelectorAll('.portfolio-item').forEach(item => {
-    item.addEventListener('click', function() {
-        moveLine(this);
-    });
-});
-
-// 흰색 줄을 클릭된 항목으로 이동하는 함수
-let horizontalUnderLine = document.getElementById("line")
-let horizontalMenus = document.querySelectorAll("#portfolio-menu span")
-horizontalMenus.forEach(menu=>menu.addEventListener("click",(e)=>horizontalIndicator(e)))
-function horizontalIndicator(e){
-  horizontalUnderLine.style.left = e.currentTarget.offsetLeft + "px";
-  horizontalUnderLine.style.width = e.currentTarget.offsetWidth + "px";
-  horizontalUnderLine.style.top = e.currentTarget.offsetTop + e.currentTarget.offsetHeight + "px";
-}
-window.addEventListener('resize', function() {
-    // 화면 가로 너비가 변경되었을 때 실행할 코드
-    // 예를 들어, 특정 항목이 현재 선택되었다고 가정하고 moveLine 함수 호출
-    horizontalIndicator(e)
-});
-
+  
+      // 이미지를 클릭했을 때 링크로 이동하는 함수 추가
+      document.querySelector('.portfolio-overlay').addEventListener('click', function () {
+          var title = document.getElementById('portfolio-title').innerText;
+          switch (title) {
+              case '케어키즈':
+                  window.open('https://kidcare.netlify.app', '_blank');
+                  break;
+              case '한솔봄':
+                  window.open('https://leeseungmini.github.io/2024-02-01Css/', '_blank');
+                  break;
+              case '동성로':
+                  window.open('http://dongseong.dothome.co.kr', '_blank');
+                  break;
+              case 'MARVEL':
+                  window.open('https://comfy-cascaron-384816.netlify.app/', '_blank');
+                  break;
+              case 'Tmdb':
+                  window.open('https://creative-platypus-4dd317.netlify.app/', '_blank');
+                  break;
+              case 'IntheSityhotel':
+                  window.open('https://leeseungmini.github.io/CSS_12_26/', '_blank');
+                  break;
+          }
+      });
+  
+      // 각 포트폴리오 항목에 클릭 이벤트 추가
+      document.querySelectorAll('.portfolio-item').forEach(item => {
+          item.addEventListener('click', function () {
+              moveLine(this);
+          });
+      });
+  
+      // 흰색 줄을 클릭된 항목으로 이동하는 함수
+      let horizontalUnderLine = document.getElementById("line")
+      let horizontalMenus = document.querySelectorAll("#portfolio-menu span")
+      horizontalMenus.forEach(menu => menu.addEventListener("click", (e) => horizontalIndicator(e)))
+  
+      function horizontalIndicator(e) {
+          horizontalUnderLine.style.left = e.currentTarget.offsetLeft + "px";
+          horizontalUnderLine.style.width = e.currentTarget.offsetWidth + "px";
+          horizontalUnderLine.style.top = e.currentTarget.offsetTop + e.currentTarget.offsetHeight + "px";
+      }
+  
+      window.addEventListener('resize', function () {
+          // 화면 가로 너비가 변경되었을 때 실행할 코드
+          // 예를 들어, 특정 항목이 현재 선택되었다고 가정하고 moveLine 함수 호출
+          horizontalIndicator(e)
+      });
       // 이하 동일한 방식으로 나머지 스팬에 대해 클릭 이벤트를 추가합니다.
+  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      document.querySelector('.gform').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var form = this;
+          var formData = new FormData(form);
+          var xhr = new XMLHttpRequest();
+          xhr.open(form.method, form.action);
+          xhr.setRequestHeader('Accept', 'application/json');
+          xhr.onreadystatechange = function() {
+              if (xhr.readyState !== XMLHttpRequest.DONE) return;
+              if (xhr.status === 200) {
+                  alert('메일 전송 완료!');
+                  form.reset();
+              } else {
+                  alert('메일 전송 완료!');
+              }
+          };
+          xhr.send(formData);
+      });
+  });
   </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
