@@ -35,6 +35,7 @@ body {
 #portfolio-menu {
   display: flex;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .portfolio-item {
