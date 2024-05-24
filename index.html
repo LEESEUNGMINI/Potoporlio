@@ -281,16 +281,16 @@
       horizontalMenus.forEach(menu => menu.addEventListener("click", (e) => horizontalIndicator(e)))
   
       function horizontalIndicator(e) {
-          horizontalUnderLine.style.left = e.currentTarget.offsetLeft + "px";
-          horizontalUnderLine.style.width = e.currentTarget.offsetWidth + "px";
-          horizontalUnderLine.style.top = e.currentTarget.offsetTop + e.currentTarget.offsetHeight + "px";
-      }
-  
-      window.addEventListener('resize', function () {
-          // 화면 가로 너비가 변경되었을 때 실행할 코드
-          // 예를 들어, 특정 항목이 현재 선택되었다고 가정하고 moveLine 함수 호출
-          horizontalIndicator(e)
-      });
+    horizontalUnderLine.style.left = e.currentTarget.offsetLeft + "px";
+    horizontalUnderLine.style.width = e.currentTarget.offsetWidth + "px";
+    horizontalUnderLine.style.top = e.currentTarget.offsetTop + e.currentTarget.offsetHeight + "px";
+    horizontalUnderLine.style.display = "block"; // 해상도 변경 후 다시 클릭하면 보이게 설정
+}
+
+window.addEventListener('resize', function () {
+    // 해상도가 변경되면 horizontalUnderLine을 보이지 않게 설정
+    horizontalUnderLine.style.display = "none";
+});
       // 이하 동일한 방식으로 나머지 스팬에 대해 클릭 이벤트를 추가합니다.
   </script>
 <script>
