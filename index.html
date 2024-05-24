@@ -113,6 +113,7 @@
                   <span id="marvel" class="portfolio-item" onclick="moveLine(this)">MARVEL</span>
                   <span id="tmdb" class="portfolio-item" onclick="moveLine(this)">TMDB</span>
                   <span id="inthesityhotel" class="portfolio-item" onclick="moveLine(this)">INTHESITYHOTEL</span>
+                  <span id="yeongjin" class="portfolio-item" onclick="moveLine(this)">YEONGJIN</span>
               </div>
               <div class="portfolio-image-container">
               <span id="image_span" class="image main">
@@ -213,12 +214,11 @@
           document.getElementById('portfolio-team').innerText = team;
           document.getElementById('portfolio-text').innerText = text;
           document.getElementById('portfolio-lenguege').innerText = lenguege;
-
       }
   
       // 각 스팬에 클릭 이벤트 추가
       document.getElementById('carekidz').addEventListener('click', function () {
-          changeContent('케어키즈', './images/careKidz.png', 'FrontEnd', '두번째 프로젝트입니다.',);
+          changeContent('케어키즈', './images/careKidz.png', 'FrontEnd', '두번째 프로젝트입니다.',"REACT");
       });
   
       document.getElementById('hansolbom').addEventListener('click', function () {
@@ -235,6 +235,9 @@
       });
       document.getElementById('inthesityhotel').addEventListener('click', function () {
           changeContent('IntheSityhotel', './images/HOTEL.png','UI/UX및 디자인, 웹퍼블리싱', ' 막막했던 모바일버전의 벽을 열어주고, 더 힘차게 나아갈수있게된홈페이지 입니다.');
+      });
+      document.getElementById('yeongjin').addEventListener('click', function () {
+          changeContent('yeongjin', './images/yeongjin.png','UI/UX및 디자인, 웹퍼블리싱', ' 막막했던 모바일버전의 벽을 열어주고, 더 힘차게 나아갈수있게된홈페이지 입니다.');
       });
   
       // 이미지를 클릭했을 때 링크로 이동하는 함수 추가
@@ -258,6 +261,9 @@
                   break;
               case 'IntheSityhotel':
                   window.open('https://leeseungmini.github.io/CSS_12_26/', '_blank');
+                  break;
+              case 'yeongjin':
+                  window.open('https://sikkkkkw.github.io/YJ4-Project/', '_blank');
                   break;
           }
       });
