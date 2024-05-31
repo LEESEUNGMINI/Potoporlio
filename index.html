@@ -108,6 +108,7 @@
               <div id="portfolio-menu">
                 <div id="line"></div> <!-- 흰색 줄 -->
                 <span id="carekidz" class="portfolio-item" onclick="moveLine(this)">케어키즈</span>
+                <span id="Jojang" class="portfolio-item" onclick="moveLine(this)">양조장</span>
                 <span id="dongseungro" class="portfolio-item" onclick="moveLine(this)">동성로</span>
                   <span id="hansolbom" class="portfolio-item" onclick="moveLine(this)">한솔봄</span>
                   <span id="marvel" class="portfolio-item" onclick="moveLine(this)">MARVEL</span>
@@ -184,7 +185,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: LeeSeungMin.</p>
+						<p class="copyright">&copy; Untitled. Design: HTML:5.</p>
 					</footer>
 
 			</div>
@@ -218,26 +219,29 @@
   
       // 각 스팬에 클릭 이벤트 추가
       document.getElementById('carekidz').addEventListener('click', function () {
-          changeContent('케어키즈', './images/careKidz.png', 'FrontEnd', '두번째 프로젝트입니다.',"REACT");
+          changeContent('케어키즈', './images/careKidz.png', 'role -  웹퍼블리싱', '알림톡을 활용한 프로젝트인 만큼 어디에 활용해야 사람들이 많이, 편하게 이용 가능할까 고민을 많이했던 프로젝트 입니다.',"REACT");
       });
-  
-      document.getElementById('hansolbom').addEventListener('click', function () {
-          changeContent('한솔봄', './images/HANSOL.png','UI/UX및 디자인 , 웹퍼블리싱', '기획부터 설계 및 디자인부터 코딩 까지 혼자서 완성했던 홈페이지 입니다.','??');
+      document.getElementById('Jojang').addEventListener('click', function () {
+          changeContent('양조장', './images/jojang.png', 'role  -  FrontEnd', '처음 맡아보는 프론트엔드 였지만, 웹퍼블리싱 및 로그인기능,카카오 지도 api까지 활용하여 많은 작업들을 할 수 있었던 프로젝트였습니다.',"REACT");
       });
       document.getElementById('dongseungro').addEventListener('click', function () {
-          changeContent('동성로', './images/dongseungro.png','웹 퍼블리싱 , FrontEnd', '첫번째 프로젝트입니다');
+          changeContent('동성로', './images/dongseungro.png','role  -  웹 퍼블리싱', 'SNS 소셜로그인을 처음 접하게 되어서, 주제와 기획에 대해 어떻게 진행하면 좋을지에 고민이 있었던 프로젝트지만, 웹퍼블리싱뿐만아니라 네이버 소셜 로그인까지 구현하고, 각종 동적인 기능들을 구현할수 있었던 프로젝트 입니다');
       });
+      document.getElementById('hansolbom').addEventListener('click', function () {
+          changeContent('한솔봄', './images/HANSOL.png','role - 개인 작업', '처음 완벽하게 반응형까지 구현했던 작품이였고, 동적인 기능추가 하는것이 생각보다 더 어려워서 js 학습에 불을 지필수 있었던 작업이였습니다.','??');
+      });
+   
       document.getElementById('marvel').addEventListener('click', function () {
-          changeContent('MARVEL', './images/MARVEL.png', ' API와 React_vite 를 이용하여 만들었고, 만들고 난 후 굉장히뿌듯했던 홈페이지 입니다.');
+          changeContent('MARVEL', './images/MARVEL.png','role  - 개인 작업',' API와 함께 처음으로 React_vite를 활용하여 이용하여 만들었고, 어려움이 많이 있었지만 마무리 한 후 굉장히 뿌듯했었던 작업이였습니다.');
       });
       document.getElementById('tmdb').addEventListener('click', function () {
-          changeContent('Tmdb', './images/tmdb.png', ' API를 처음으로 적극활용하여 완성시킨 홈페이지 이고, React를사용하여 비동기식으로 작업한 홈페이지 입니다.');
+          changeContent('Tmdb', './images/tmdb.png','role  -  개인 작업', ' API를 처음으로 활용하여 어려움이 많았던 홈페이지 이지만, React를사용하여 비동기식으로 잘 마무리한 홈페이지 입니다.');
       });
       document.getElementById('inthesityhotel').addEventListener('click', function () {
-          changeContent('IntheSityhotel', './images/HOTEL.png','UI/UX및 디자인, 웹퍼블리싱', ' 막막했던 모바일버전의 벽을 열어주고, 더 힘차게 나아갈수있게된홈페이지 입니다.');
+          changeContent('IntheSityhotel', './images/HOTEL.png','role  -  개인 작업', ' 모바일 버전 작업이 막막했던 시기에 모바일버전의 벽을 열어주고 반응형의 이해도를 많이 높일 수 있었던 작업이였습니다.');
       });
       document.getElementById('yeongjin').addEventListener('click', function () {
-          changeContent('yeongjin', './images/yeongjin.png','UI/UX및 디자인, 웹퍼블리싱', ' 막막했던 모바일버전의 벽을 열어주고, 더 힘차게 나아갈수있게된홈페이지 입니다.');
+          changeContent('yeongjin', './images/yeongjin.png','role  -  UI/UX및 디자인, 웹퍼블리싱', '교육을 받은지 한달 차에 학교측에서 대회가 열려 참여 했었던 프로젝트입니다. 이 프로젝트에 있어선 스트레스도 많이 받았지만, HTML,CSS 측면에서 큰 성장할수 있었던 프로젝트 입니다.');
       });
   
       // 이미지를 클릭했을 때 링크로 이동하는 함수 추가
@@ -246,6 +250,9 @@
           switch (title) {
               case '케어키즈':
                   window.open('https://kidcare.netlify.app', '_blank');
+                  break;
+              case '양조장':
+                  window.open('https://port-0-project3-17xco2nlsjopaja.sel5.cloudtype.app', '_blank');
                   break;
               case '한솔봄':
                   window.open('https://leeseungmini.github.io/2024-02-01Css/', '_blank');
